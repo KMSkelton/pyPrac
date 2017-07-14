@@ -1,15 +1,6 @@
-purchName = ''
-purchAddress = ''
-purchPhone = ''
-carMakeModel = ''
-carID = ''
-purchPrice = 0000.00
-
 salesTaxRate = float(0.101)
-
 licenseFee = 50.00
 dealerPrepFee = 50.00
-
 
 purchName = input ('Please enter your full name. ')
 
