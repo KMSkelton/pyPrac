@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6caf655c-c094-49e2-bb94-8fd9bfc16799" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/HW3.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW3.py" afterDir="false" />
-    </list>
+    <list default="true" id="6caf655c-c094-49e2-bb94-8fd9bfc16799" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,15 +10,25 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/pyPrac$HW2.coverage" NAME="HW2 Coverage Results" MODIFIED="1531949408374" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pyPrac$HW3.coverage" NAME="HW3 Coverage Results" MODIFIED="1531946821358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="HW3.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HW3.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HW3.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="267">
               <caret line="27" column="83" selection-start-line="27" selection-start-column="83" selection-end-line="27" selection-end-column="83" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HW2.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/HW2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="382">
+              <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
             </state>
           </provider>
         </entry>
@@ -34,6 +42,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/HW3.py" />
+        <option value="$PROJECT_DIR$/HW2.py" />
       </list>
     </option>
   </component>
@@ -90,7 +99,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.HW2">
+    <configuration name="HW2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pyPrac" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HW2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="HW3" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pyPrac" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -110,8 +138,13 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <list>
+      <item itemvalue="Python.HW3" />
+      <item itemvalue="Python.HW2" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.HW2" />
         <item itemvalue="Python.HW3" />
       </list>
     </recent_temporary>
@@ -178,6 +211,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="267">
           <caret line="27" column="83" selection-start-line="27" selection-start-column="83" selection-end-line="27" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HW2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
         </state>
       </provider>
     </entry>
