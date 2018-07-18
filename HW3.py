@@ -25,7 +25,7 @@ if __name__ == "__main__":
         else:
             oddTotal += num
     print('The total of odd values is: ', oddTotal)
-    print("\n\n\n\n\n or save one function call with built in methods: ")
+    print("\n\n\n\n\n or if we want to enumerate instead of use index() on the list: ")
     for idx, x in enumerate(numRange):
         if x % 2 == 0:
             print("value: ", x, "index: ", idx)
