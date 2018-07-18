@@ -9,6 +9,9 @@ __pycache__/
 # Student code
 student.*
 
+# God I hate github
+.idea/*
+
 # Distribution / packaging
 .Python
 env/
