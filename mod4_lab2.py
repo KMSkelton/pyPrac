@@ -24,10 +24,10 @@ for name in names:
 # print(names_dict)
 
 print(max(names_dict.values()))
-
+max_value = max(names_dict.values())
 # sssstrrrreeeeetch gooooooaaaaaaalllllllll
 names_dict_list = list(names_dict.values())
 # print(max_index.index(2))
-max_index = names_dict_list.index(2)
+max_index = names_dict_list.index(max_value)
 name_dict_keys = list(names_dict.keys())
 print(name_dict_keys[max_index])
