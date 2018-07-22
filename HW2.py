@@ -42,9 +42,12 @@ carID = purchPhone[:3] + '_' + purchName[-4:].replace(purchName[-4], 'X')
 print('Hello ' + purchName + ' thank you for your interest in ' + carMakeModel + ', vehicle #' + carID + '.')
 # advanced, paying a lot of attention method
 print('Hello {} thank you for your interest in {}, vehicle #{}.'.format(purchName, carMakeModel, carID))
+print('\n\n\nThe price for this {} is {:.2f} plus ${:.2f} in sales tax, plus ${:.2f} in licensing fees.\nThere is a dealer processing fee of ${:.2f}. Your total is: ${:.2f}.\nThank you for shopping Python Motors!'.format(carMakeModel, purchPrice, salesTax, licenseFee, dealerPrepFee, totalCost) )
 # named placeholders, more flexibility with list order
 print('Hello {pn} thank you for your interest in {car}, vehicle #{lic}.'.format(car=carMakeModel, pn=purchName, lic=carID))
 
+# Concatenated with inline formatting
 print('The price for this ' + carMakeModel + ' is ' + "{:.2f}".format(purchPrice) + ' plus $' + "{:.2f}".format(salesTax) + ' in sales tax, plus $' + ("{:.2f}".format(licenseFee)) + ' in licensing fees. There is a dealer processing fee of $' + ("{:.2f}".format(dealerPrepFee)) + '. Your total is: $' + ("{:.2f}".format(totalCost)) + '. Thank you for shopping Python Motors!' )
 
-print('\n\n\nThe price for this {} is {:.2f} plus ${:.2f} in sales tax, plus ${:.2f} in licensing fees.\nThere is a dealer processing fee of ${:.2f}. Your total is: ${:.2f}.\nThank you for shopping Python Motors!'.format(carMakeModel, purchPrice, salesTax, licenseFee, dealerPrepFee, totalCost) )
+# f-strings method
+print(f'The price for this {carMakeModel} is ${purchPrice:.2f} plus ${salesTax:.2f} in sales tax, plus ${licenseFee:.2f} in licensing fees. There is a dealer processing fee of ${dealerPrepFee:.2f}. Your total is: ${totalCost:.2f} Thank you for shopping Python Motors!' )
