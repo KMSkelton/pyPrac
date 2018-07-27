@@ -6,7 +6,13 @@ with open("./land_time_forgot.txt", "r") as land_time_forgot:
   txt_list = land_time_forgot.readlines()
 
 for word in txt_list:
+<<<<<<< HEAD
     list_of_words.append(word)
+=======
+    split_words = word.split(" ")
+    for split_word in split_words:
+        list_of_words.append(split_word)
+>>>>>>> f07ccf2... updated HW to reflect 2018 course
 
 print(list_of_words)
 list_length = len(list_of_words)
