@@ -6,9 +6,15 @@ with open("./land_time_forgot.txt", "r") as land_time_forgot:
   txt_list = land_time_forgot.readlines()
 
 for word in txt_list:
-    split_words = word.split(" ")
+    split_words = word.strip().split(" ")
+    # I guess stripping is important so all instances of 'the' are captured, whether they have trailing
+    # punctuation or not
     for split_word in split_words:
+        # remove the empty lines, which cuts down on total number of words and unique words
+        if split_word == '':
+            continue
         list_of_words.append(split_word)
+
 
 # print(list_of_words)
 list_length = len(list_of_words)

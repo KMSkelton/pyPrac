@@ -1,49 +1,71 @@
+"""This is homework 5. I downloaded a book called Sandwiches in txt formate"""
+#Save the book Sanwiches txt formate file at current directory
+#Read in the file and store lines in a list
+SandwichesLinesList = []
+for line in open("./land_time_forgot.txt", "r"):
+    line = line.strip()
+    SandwichesLinesList.append(line)
 
-#
-# Two lists defined for program - List of names and ages
-#
+print(SandwichesLinesList)
 
-names = ["Aliyah", "Bob", "Cathy", "Dan", "Ed", "Frank", "Darnell",
-         "Gary", "Shanice", "Irene", "Jack", "Kelly", "Demetrius"]
+#Convert the list of book lines into a list of the words
+LineWordsList = []
+for line in SandwichesLinesList:
+    words = line.split(" ")
+    LineWordsList.extend(words)
 
-# convert the names to lower-case for fun, profit and easy validation
-l_names = [x.lower() for x in names]
+while '' in LineWordsList:
+    LineWordsList.remove('')
 
-ages = [20, 21, 18, 18, 19, 20, 20, 19, 19, 19, 22, 19, 30]
+print(len(LineWordsList))
 
+#Print a sentence using format with the total number of words and the unique number of words (hint: use a set)
+TotalNumber = len(LineWordsList)
+LineWordsSet = set(LineWordsList)
+UniqueNumber = len(LineWordsSet)
 
-#
-# Variable "comment" to determine "type" of a zip
-#
+print("The total number of words is {}.\nThe number of unique word is {}".format(TotalNumber, UniqueNumber))
 
-comment = zip(names, ages)
-print('Note performing zip function on lists transforms them to a dataclass a type of:  ', type(comment))
+#Calculate the word count for each word.)
+WordCountDict = {}
+for word in LineWordsList:
+    if word in WordCountDict.keys():
+        WordCountDict[word] = WordCountDict[word] + 1
+    if word not in WordCountDict.keys():
+        WordCountDict[word] = 1
 
-#
-# Merged zip file into a dictionary using lowercase names
-#
+list1 = list(WordCountDict.keys())
+list2 = list(WordCountDict.values())
 
-bio_dict = dict(zip(l_names, ages))
+for x in list1:
+    wordcount = list2[list1.index(x)]
+    # print("the word count of '{}' is {}".format(x,wordcount))
 
-print('So lets use the dict function and make it a dataclass a type of: ', type(bio_dict))
+#Calculate the word with the maximum count
+MaxCount = max(list2)
+WordWithMaxCount = list1[list2.index(MaxCount)]
 
+print("The word with the maximum count is '{}'".format(WordWithMaxCount))
 
-# Maximum number of guesses is limited to value of numTries
+#Get the minimum word count
+MinCount = min(list2)
+print("The minimum count is '{}'".format(MinCount))
 
-numTries = 5
-usedTries = 0
-
-while True:
-    usedTries = usedTries + 1
-    if usedTries > numTries:
-        print("No more attempts allowed this round. Chow!")
-        break
-    u_guess = str(input("Kindly input the name of person in our realm to ascertain their age: "))
-    all_lower = u_guess.lower()
-    if all_lower in bio_dict:
-        print(all_lower, "is the fine age of:", bio_dict[all_lower])
-        continue
+#Store all of the words that have the minimum word count in a list
+list3 = []
+for w in list(LineWordsSet):
+    if WordCountDict[w] == MinCount:
+        list3.append(w)
     else:
-        print("Bonk...no person with that name is in this realm. Kindly try again: ")
-        continue
+        pass
 
+print(list3)
+
+
+#Print a sentence including the minimum word count and the number of words with that count
+NumberWithMinWordCount = len(list3)
+print("The minimum word count is {} and the number of words with the minimum count is {}".format(MinCount,NumberWithMinWordCount))
+
+#Print a sentence of the percentage of words that are unique in the book
+percentage = round((UniqueNumber/TotalNumber),4)
+print("The percentage of unique words over total words is {}%".format((percentage*100)))
