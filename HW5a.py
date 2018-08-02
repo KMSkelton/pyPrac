@@ -14,7 +14,7 @@ for word in txt_list:
         if split_word == '':
             continue
         list_of_words.append(split_word)
-
+print(list_of_words)
 
 # print(list_of_words)
 list_length = len(list_of_words)
@@ -33,6 +33,7 @@ for word in list_of_words:
 # print(word_counts)
 
 # Calculate the word with the maximum count (hint: use max (Links to an external site.)Links to an external site.)
+print("brute force max: ", max(word_counts))
 most_common_word = max(word_counts, key=word_counts.get)
 # print(most_common_word)
 print(f"'{most_common_word}' is the most common word. How often does '{most_common_word}' appear? ", word_counts[most_common_word])
@@ -51,6 +52,8 @@ for words, count in word_counts.items():
         continue
 print(minimum_count_words)
 
+least_frequent = min(word_counts, key=word_counts.get)
+print("Least frequent? ", least_frequent)
 # Print a sentence including the minimum word count and the number of words with that count
 print(f"The fewest times a word appears is {word_counts_values_sorted[0]}, and there are {len(minimum_count_words)} words that appear {word_counts_values_sorted[0]} times/s")
 
