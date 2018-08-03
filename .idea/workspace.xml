@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d768582-2fd1-44f5-a40e-f942ed8c3ffb" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/HW5a.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW5a.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/students.py" beforeDir="false" afterPath="$PROJECT_DIR$/students.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW6.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW6.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,6 +16,7 @@
     <SUITE FILE_PATH="coverage/pyPrac$mod5_lab2.coverage" NAME="mod5_lab2 Coverage Results" MODIFIED="1533013067461" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pyPrac$HW2.coverage" NAME="HW2 Coverage Results" MODIFIED="1531949408374" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pyPrac$mod4_lab1.coverage" NAME="mod4_lab1 Coverage Results" MODIFIED="1531969673125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pyPrac$HW6.coverage" NAME="HW6 Coverage Results" MODIFIED="1533258921610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pyPrac$HW4a.coverage" NAME="HW4a Coverage Results" MODIFIED="1532571108857" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pyPrac$HW3.coverage" NAME="HW3 Coverage Results" MODIFIED="1531946821358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pyPrac$mod5_lab1.coverage" NAME="mod5_lab1 Coverage Results" MODIFIED="1532725710261" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -26,11 +26,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="students.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="students.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/students.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-100">
               <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HW6.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/HW6.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -111,6 +123,7 @@
         <option value="$PROJECT_DIR$/mod6_lab1.py" />
         <option value="$PROJECT_DIR$/HW5a.py" />
         <option value="$PROJECT_DIR$/students.py" />
+        <option value="$PROJECT_DIR$/HW6.py" />
       </list>
     </option>
   </component>
@@ -172,7 +185,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.students">
+  <component name="RunManager" selected="Python.HW6">
     <configuration name="HW5a" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -192,7 +205,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="mod5_lab1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="HW6" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -205,7 +218,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mod5_lab1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HW6.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -271,17 +284,17 @@
     <list>
       <item itemvalue="Python.students" />
       <item itemvalue="Python.mod5_lab2" />
-      <item itemvalue="Python.mod5_lab1" />
       <item itemvalue="Python.HW5a" />
       <item itemvalue="Python.mod6_lab1" />
+      <item itemvalue="Python.HW6" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.HW6" />
         <item itemvalue="Python.students" />
         <item itemvalue="Python.HW5a" />
         <item itemvalue="Python.mod6_lab1" />
         <item itemvalue="Python.mod5_lab2" />
-        <item itemvalue="Python.mod5_lab1" />
       </list>
     </recent_temporary>
   </component>
@@ -487,6 +500,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-100">
           <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HW6.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
