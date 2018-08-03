@@ -12,6 +12,9 @@ student.*
 # God I hate github
 .idea/*
 
+# Stupid PyCharm
+*/.xml
+
 # Distribution / packaging
 .Python
 env/
