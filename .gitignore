@@ -7,7 +7,11 @@ __pycache__/
 *.so
 
 # Student code
-student.*
+student*.*
+
+#lab and hw results don't need to go:
+*.csv
+*.txt
 
 # God I hate github
 .idea/*

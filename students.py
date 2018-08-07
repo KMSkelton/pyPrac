@@ -1,54 +1,46 @@
-"""
-Print a sentence using format with the total number of words and the unique number of words (hint: use a set)
-Calculate the word count for each word. (hint: see the section "Counting with Dictionaries")
-Calculate the word with the maximum count (hint: use max (Links to an external site.)Links to an external site.)
-Get the minimum word count (hint: use values (Links to an external site.)Links to an external site.)
-Store all of the words that have the minimum word count in a list (hint: use a for loop and items (Links to an external site.)Links to an external site.)
-Print a sentence including the minimum word count and the number of words with that count
-Print a sentence of the percentage of words that are unique in the book (hint: use :.1f in your format)
-"""
+# Get user input for the following:
+# Number of people who want pizza
+# Average number of slices per person
 
-f = open("./land_time_forgot.txt")
+import math
+people=int(input("Enter number of people eating pizza: "))
+people_pizza={}
+for i in range(1,people+1):
+    people_name=input("Who wants Pizza? ")
+    slice_count=int(input("How many slices do you want? "))
+    people_pizza[people_name]=slice_count
+print(people_pizza)
 
-story_list = list(f.readlines())
+# How many pizzas to order based on number of people and average number of slices
 
-# print(story_list)
+def total_pizza_order(pizza):
+    pizza=math.ceil(sum(people_pizza.values())/8)
+    return pizza
 
-# #sentence_num = int()
-#
-# #sentence_num = print(input("Which sentence would you like a word count from? Please enter any sentence number: "))
-#
-#
-# print(story_list[0:-1])
-#
-# for index, story in enumerate(story_list):
-#     print("sentence: '{}' is line {}".format(story, str(index)))
-#
-# print()
-#
-# sentence = (story_list[3836])
-# #words = sentence.strip('.,?')
-# words = sentence.split(' ')
+# Create the following static (unchanging) variables:
+pizza_cost = 15.99
+tax_rate = 0.101
+tip_rate = 0.18
+delivery_fee = 3.99
 
-word_count = {}
-for x in words:
-    if x in word_count:
-        word_count[x] = word_count[x] + 1
-    else:
-        word_count[x] = 1
+# Write functions to calculate:
 
-print(word_count)
+def cost(pizza):
+    totalcost=((tax_rate+tip_rate)*(pizza_cost*pizza))+delivery_fee+(pizza_cost*pizza)
+    return totalcost
 
+def cost_per_person(totalcost):
+    splitcost=totalcost/people
+    return splitcost
 
-#Print a sentence including the minimum word count and the number of words with that count
+# Total pizza to order
+pizza=total_pizza_order(people)
+print("The total number of pizza to order: {}".format(pizza))
 
-print("")
+# Total pizza cost
+totalcost=cost(pizza)
+print("The total cost of Pizza is: ${}".format(totalcost))
 
-#Print a sentence of the percentage of words that are unique in the book (hint: use :.1f in your format)
-#percent =
-#print("This book contains ", percent, "% wrods that are unique.")
-
-
-#for line in open("./land_time_forgot.txt"):
-   # line = line.strip()
- #   print(line)
+# Cost per person
+splitcost=cost_per_person(totalcost)
+print("The total cost per person is: ${}".format(splitcost))

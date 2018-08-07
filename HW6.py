@@ -8,10 +8,7 @@ def calcNumPizzas(PizzaSlices, pizzaEaterList):
         totalSlices += pizzaEaterList[i][1]
         i += 1
     numPizzasToPurchase = int(math.ceil(totalSlices / PizzaSlices))
-<<<<<<< HEAD
     print(f'Slices in this order: {totalSlices} ')
-=======
->>>>>>> 0280d9aec2bca22c6c1c1f10eb888c0b0fe1e915
     print('Pizzas in this order: ', numPizzasToPurchase)
     return numPizzasToPurchase
 
@@ -35,11 +32,7 @@ def getPizzaInputs():
         # ask how many slices they are going to eat
         numberSlices = int(input('How many slices will this person eat? '))
         if type(nameEater) == str and type(numberSlices) == int:
-<<<<<<< HEAD
             print(f'Adding {nameEater} to the list.') # They will pay for {numberSlices} slices.
-=======
-            print(f'Adding {nameEater} to the list. They will pay for {numberSlices} slices.')
->>>>>>> 0280d9aec2bca22c6c1c1f10eb888c0b0fe1e915
             pizzaEaterList.append([nameEater, numberSlices])
         pizzaEaterListLength = len(pizzaEaterList)
     return pizzaEaterList
