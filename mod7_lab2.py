@@ -17,12 +17,8 @@ all_a = soup.find_all("li", {"class": "gallerybox"})
 
 craters = {}
 for initial in all_a:
-    # thumb = initial.find("div", "thumb")
-    # thumb_img = thumb.find("img")
-    # print(thumb_img.attrs['src'])
     crater_info = initial.find("div", "gallerytext")
     link = crater_info.find("a")
-    # print(link.string)
     name = link.string
     craters[name] = link
 print(craters)

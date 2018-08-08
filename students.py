@@ -1,46 +1,59 @@
-# Get user input for the following:
-# Number of people who want pizza
-# Average number of slices per person
+"""Taking what we learned about functions, create a python script that will calculate the cost of pizza for movie night.
 
-import math
-people=int(input("Enter number of people eating pizza: "))
-people_pizza={}
-for i in range(1,people+1):
-    people_name=input("Who wants Pizza? ")
-    slice_count=int(input("How many slices do you want? "))
-    people_pizza[people_name]=slice_count
-print(people_pizza)
+Get user input for the following:
+Number of people who want pizza
+Average number of slices per person
+You can store each of these as a single integer, or use a dictionary to map names to slices, up to you
+Create the following static (unchanging) variables:
+Pizza cost = $15.99
+Total slices = 8
+Tax rate of 10.1%
+Tip rate of 18%
+Delivery fee of $3.99
+Write functions to calculate:
+How many pizzas to order based on number of people and average number of slices
+Total pizza cost
+Cost per person  """
 
-# How many pizzas to order based on number of people and average number of slices
+#Wrap all of the following in a single function definition, then invoke the function (no parameters are needed)
+def user_input_pizza():
+	eaters = int(input("Please enter number of people who want pizza: "))
+	avg_slices = int(input("Please enter the average number of slices per person: "))
+	return eaters, avg_slices
 
-def total_pizza_order(pizza):
-    pizza=math.ceil(sum(people_pizza.values())/8)
-    return pizza
-
-# Create the following static (unchanging) variables:
+#create variables for pizza cost, slices, tax rate, tip rate, delivery fee
 pizza_cost = 15.99
-tax_rate = 0.101
-tip_rate = 0.18
-delivery_fee = 3.99
+slices = 8
+tax_rate = .101
+tip_rate = .18
+delivery = 3.99
 
-# Write functions to calculate:
+#How many pizzas to order based on number of people and average number of slices
+def pizzas_to_order(eaters,avg_slices):
+	pizzas = (eaters * avg_slices)/slices
+	return pizzas
 
-def cost(pizza):
-    totalcost=((tax_rate+tip_rate)*(pizza_cost*pizza))+delivery_fee+(pizza_cost*pizza)
-    return totalcost
+#Total pizza cost
+def total_pizza_cost(pizzas):
+	total_cost_no_tax = pizza_cost * pizzas
+	tax = total_cost_no_tax * tax_rate
+	tip = total_cost_no_tax * tip_rate
+	overall_total_cost = round(total_cost_no_tax + tax+ tip+ delivery,2)
+	return overall_total_cost
 
-def cost_per_person(totalcost):
-    splitcost=totalcost/people
-    return splitcost
+#Cost per person
+def cost_per_person(overal_total_cost, eaters ):
+	cost_per_eater = overal_total_cost/ eaters
+	return cost_per_eater
 
-# Total pizza to order
-pizza=total_pizza_order(people)
-print("The total number of pizza to order: {}".format(pizza))
+#Final Print statement for showing how many pizzas, total cost and cost per pizza eater
+if __name__ == "__main__":
+	my_pizza_order = (user_input_pizza())
+	pizza_numbers = round(pizzas_to_order(my_pizza_order[0], my_pizza_order[1]))
+	print ("You will need to order {} pizzas for dinner".format(pizza_numbers))
 
-# Total pizza cost
-totalcost=cost(pizza)
-print("The total cost of Pizza is: ${}".format(totalcost))
+	final_dinner_cost = total_pizza_cost(pizza_numbers)
+	pizza_eater_cost = round(cost_per_person(final_dinner_cost, my_pizza_order[0]),2)
+	print ("The total cost is ${} and the cost per person for dinner is ${}".format(final_dinner_cost, pizza_eater_cost))
 
-# Cost per person
-splitcost=cost_per_person(totalcost)
-print("The total cost per person is: ${}".format(splitcost))
+#HW6 complete and works!
