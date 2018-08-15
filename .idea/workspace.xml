@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d768582-2fd1-44f5-a40e-f942ed8c3ffb" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/HW8.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mod8_lab2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW6.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW6.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW7.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW7.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/students.py" beforeDir="false" afterPath="$PROJECT_DIR$/students.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW8.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW8.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,7 +16,7 @@
     <SUITE FILE_PATH="coverage/pyPrac$students.coverage" NAME="students Coverage Results" MODIFIED="1534360344184" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pyPrac$HW2.coverage" NAME="HW2 Coverage Results" MODIFIED="1531949408374" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pyPrac$HW6.coverage" NAME="HW6 Coverage Results" MODIFIED="1533777124268" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pyPrac$HW8.coverage" NAME="HW8 Coverage Results" MODIFIED="1534367843489" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pyPrac$HW8.coverage" NAME="HW8 Coverage Results" MODIFIED="1534371488403" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pyPrac$HW4a.coverage" NAME="HW4a Coverage Results" MODIFIED="1532571108857" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pyPrac$HW3.coverage" NAME="HW3 Coverage Results" MODIFIED="1531946821358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pyPrac$mod5_lab1.coverage" NAME="mod5_lab1 Coverage Results" MODIFIED="1532725710261" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -60,8 +56,8 @@
       <file leaf-file-name="HW8.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/HW8.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-91">
-              <caret line="17" column="41" lean-forward="true" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+            <state relative-caret-position="265">
+              <caret line="46" column="26" lean-forward="true" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -386,7 +382,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -624,8 +620,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HW8.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-91">
-          <caret line="17" column="41" lean-forward="true" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+        <state relative-caret-position="265">
+          <caret line="46" column="26" lean-forward="true" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
         </state>
       </provider>
     </entry>

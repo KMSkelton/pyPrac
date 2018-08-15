@@ -6,41 +6,45 @@ Prints out a current balance
 Prints an error message if someone tries to withdraw more money than what is currently in the account
 '''
 class BankAccount():
-    def user_menu(choice):
+    initial_balance = 0.00
+    balance = 500.00
+
+    def user_menu(self):
+        choice = 9999
+        while (choice > 9000):
+            choice = int(input("What would you like to do? 1) Check Balance. 2) Deposit Funds. 3) Withdraw Funds. 0) Leave."))
         if (choice == 0):
             return print("Thanks for banking today!")
-        if (choice == 1):
-            BankAccount.current_balance()
-        if (choice == 2):
-            BankAccount.current_balance()
+        elif (choice == 1):
+            self.current_balance()
+        elif (choice == 2):
+            self.current_balance()
             dep_amt = float(input("How much are you depositing?"))
-            BankAccount.deposit_to_check(dep_amt, current_balance)
-            BankAccount.current_balance()
-        if (choice == 3):
-            BankAccount.current_balance()
+            self.deposit_to_check(dep_amt)
+            self.current_balance()
+        elif (choice == 3):
+            self.current_balance()
             withdraw_amt = float(input("How much would you like today?"))
-            BankAccount.withdraw_from_check(withdraw_amt, current_balance)
-            BankAccount.current_balance()
+            self.withdraw_from_check(withdraw_amt)
+            self.current_balance()
+        else:
+            print("That's not something I can do. Please see a teller, or try again.")
 
-    def current_balance():
+    def current_balance(self):
         try:
-            (current_balance > 0)
-        except (current_balance == 0):
+            (self.balance > 0)
+        except (self.balance == 0):
             print("Your current balance is $0.00")
-        print(f"Your current balance is {current_balance:.2f}.")
-        return current_balance
+        print("Your current balance is {:.2f}.".format(self.balance))
 
-    def deposit_to_check(dep_amt, current_balance):
-        current_balance = current_balance + dep_amt
-        return current_balance
+    def deposit_to_check(self, dep_amt):
+        self.balance = self.balance + dep_amt
 
-    def withdraw_from_check(withdraw_amt, current_balance):
-        assert (withdraw_amt > current_balance), "Insufficent funds."
-        current_balance = (current_balance - withdraw_amt)
-        return current_balance
+    def withdraw_from_check(self, withdraw_amt):
+        assert (withdraw_amt < self.balance), "Insufficent funds."
+        self.balance = (self.balance - withdraw_amt)
 
 if __name__ == "__main__":
-    initial_balance = 0.00
-    current_balance = 500.00
-    choice = BankAccount.user_menu(int(input("What would you like to do? 1) Check Balance. 2) Deposit Funds. 3) Withdraw Funds. 0) Leave.")))
+    ba = BankAccount()
+    ba.user_menu()
 
