@@ -46,7 +46,7 @@ def calcTotalCost(numPizzasToPurchase, pizzaInputs):
 
     subTotal = (PizzaCost * numPizzasToPurchase)
     print(f"Cost for {numPizzasToPurchase} pizza(s) is ${subTotal}")
-    subTotalTax = subTotal * TaxRate
+    subTotalTax = (subTotal + DeliveryFee) * TaxRate
     print(f"The tax on this order is ${subTotalTax:.2f}")
     subTotalTip = subTotal * TipRate
     print(f"The 18% tip is: ${subTotalTip:.2f}")
